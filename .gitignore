@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+.venv/
+.env/
+.env
+**/.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Database
+app/data.db
+
+# Logs
+*.log
+
+# Netlify local state
+.netlify/
+**/.netlify/

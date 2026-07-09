@@ -1,0 +1,262 @@
+/* =========================================================
+   GLOBAL THEME
+========================================================= */
+
+.stApp {
+  background-color: #0A0D14;
+  color: #fff;
+}
+
+[data-testid="stSidebar"] {
+  background-color: #111520;
+}
+
+/* =========================================================
+   TYPOGRAPHY (SCOPED – safer)
+========================================================= */
+
+.block-container,
+.block-container * {
+  font-family: 'AdobeClean', sans-serif !important;
+}
+
+/* =========================================================
+   LAYOUT
+========================================================= */
+
+.block-container {
+  padding: 3rem 3.5rem !important;
+  max-width: 1200px !important;
+}
+
+/* =========================================================
+   BRAND / TITLE
+========================================================= */
+
+.gym-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid rgba(245, 178, 60, 0.35);
+  color: #F5B23C;
+  padding: 4px 14px;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  margin-bottom: 14px;
+}
+
+.gym-tag .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #F5B23C;
+  display: inline-block;
+}
+
+.gym-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 6px;
+  background: linear-gradient(90deg, #ffffff 0%, #F5B23C 55%, #6FE3D8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gym-subtitle {
+  color: #9a9aa2;
+  font-size: 1.02rem;
+  margin-bottom: 1.5rem;
+}
+
+/* =========================================================
+   SIDEBAR BRAND
+========================================================= */
+
+[data-testid="stSidebar"] h1 {
+  font-size: 1.3rem !important;
+  background: linear-gradient(90deg, #ffffff, #F5B23C);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+[data-testid="stSidebar"] .stCaption,
+[data-testid="stSidebar"] [data-testid="stCaptionContainer"] p {
+  color: #F5B23C !important;
+  opacity: 1 !important;
+}
+
+/* =========================================================
+   PLACEHOLDER BOX
+========================================================= */
+
+.gym-placeholder {
+  border: 2px dashed rgba(245, 178, 60, 0.3);
+  padding: 56px 32px;
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  background: linear-gradient(180deg, rgba(245, 178, 60, 0.03), transparent);
+}
+
+.gym-placeholder h2 {
+  color: #eee;
+  margin-bottom: 8px;
+  font-size: 1.4rem;
+}
+
+.gym-placeholder p {
+  font-size: 1.02rem;
+  color: #9a9aa2;
+}
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+button,
+.stButton button,
+.stDownloadButton button,
+.MuiBox-root button {
+  background-color: #181D2A !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 0 !important;
+  font-family: 'AdobeClean', sans-serif !important;
+}
+
+/* =========================================================
+   INPUTS & TEXT ELEMENTS
+========================================================= */
+
+input,
+textarea,
+p,
+li,
+code,
+[data-testid="stSelectbox"] > div > div,
+[data-baseweb="select"] > div,
+[data-baseweb="popover"] ul,
+[data-baseweb="menu"] {
+  border-radius: 0 !important;
+  font-family: 'AdobeClean', sans-serif !important;
+}
+
+/* =========================================================
+   METRICS
+========================================================= */
+
+[data-testid="stMetric"] {
+  background-color: #181D2A;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 1rem 1.2rem;
+  border-radius: 0;
+}
+
+[data-testid="stMetric"] div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+[data-testid="stMetricValue"] {
+  font-size: 1.5rem !important;
+  font-weight: 400 !important;
+}
+
+[data-testid="stMetricLabel"] {
+  font-size: 15px !important;
+  opacity: 0.6;
+}
+
+[data-testid="stMetric"] div label p {
+  font-size: 16px !important;
+}
+
+/* =========================================================
+   CONTAINERS / CARDS
+========================================================= */
+
+.stContainer,
+.stExpander,
+.stTabs,
+.stColumns,
+.stPopover,
+.stAlertContainer,
+.stStatusContainer,
+.stMetric,
+.stTable,
+.stDataFrame,
+.stForm,
+.stSelectbox,
+[data-baseweb="select"] > div,
+[data-testid="stForm"],
+[data-testid="stMetric"],
+[data-testid="stNumberInputContainer"],
+[data-testid="stDataFrameColumnMenu"],
+[data-testid="stHeadingWithActionElements"],
+[data-testid="stCaptionContainer"] p,
+[data-testid="stAlertContentInfo"] p,
+[data-testid="stSidebarNavLink"],
+[data-testid="stMarkdownContainer"] h3,
+[data-baseweb="popover"],
+[data-baseweb="menu"],
+div[role="menu"],
+div[role="menuitem"] {
+  border-radius: 0 !important;
+  font-family: 'AdobeClean', sans-serif !important;
+}
+
+/* =========================================================
+   DATAFRAME FIX
+========================================================= */
+
+.stDataFrame,
+.stDataFrame div,
+.stDataFrameGlideDataEditor {
+  border-radius: 0 !important;
+  font-family: 'AdobeClean', sans-serif !important;
+}
+
+/* =========================================================
+   INTERACTIVE ELEMENTS
+========================================================= */
+
+.stTextInput,
+.stTextArea,
+.stNumberInput,
+.stSlider,
+.stMultiselect,
+.stRadio,
+.stCheckbox,
+.stToggle,
+.stFileUploader,
+.stColorPicker,
+.stDateInput,
+.stTimeInput,
+.stCameraInput,
+[data-testid="stTextInput"] > div,
+[data-testid="stButton"] button,
+[data-testid="stBaseButton-secondaryFormSubmit"],
+[data-testid="stStatusWidget"] {
+  border-radius: 0 !important;
+  font-family: 'AdobeClean', sans-serif !important;
+}
+
+/* =========================================================
+   MARKDOWN
+========================================================= */
+
+[data-testid="stMarkdownContainer"] strong {
+  font-family: 'AdobeClean', sans-serif !important;
+}
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.stForm {
+  margin-top: 2rem !important;
+  padding: 1.5rem 1rem !important;
+  background-color: #181D2A !important;
+  color: #fff;
+}
